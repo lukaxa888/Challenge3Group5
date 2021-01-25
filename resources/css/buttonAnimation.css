@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#buttonAnimation{
+    position:relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #111;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+}
+#buttonAnimation:before{
+    content:'';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100%+4px);
+    height : calc(100% - 12px);
+    background: #fff ;
+    transform: 0.5s ease-in-out;
+
+
+}
+#buttonAnimation:hover:before{
+    transform: scaleY(0);
+}
+
+#buttonAnimation span {
+position :relative;
+z-index: 3;
+
+}
