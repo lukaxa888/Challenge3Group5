@@ -39,6 +39,23 @@ Route::group(['middleware' => ['auth', 'web']], function() {
     Route::post('/calendarUpdate','WorkoutConnectionController@update')->name('calendarUpdate');
     
     Route::delete('/calendarDelete/{id}','CalendarController@destroy')->name('calendarDelete');
+    //para elimnar usuarios(admin)
+ 
+    Route::get('/adminPanel','Admin\DashboardController@returnUsers')->name('dashboardAdmin');
+    
+    Route::delete('users/{id}', 'UserController@deleteUser')
+            ->name('userDestroy');
+
+    //Panel editar
+
+    Route::get('/editPanel','Admin\DashboardController@returnUsersEdit')->name('userEdit');
+
+    Route::get('/usersEdit/{id}', 'Admin\DashboardController@returnUserEdit')->name('userUpdate');
+
+    Route::post('/usersEdit/{user}', 'UserController@registerEdit')->name('registerEdit');
+    
+    
+    
 
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
     Route::get('/admin_dashboard','Admin\DashboardController@index')->middleware('role:1');
@@ -48,20 +65,7 @@ Route::group(['middleware' => ['auth', 'web']], function() {
         return view('pages/shop');
     })->name('users.shop');
 
-    
-
-  
-
-  
-
     Route::post('/store', [shopController::class, 'store'])->name('users.store.shop');
-
-
-
-
-
-
-
 
 
 });

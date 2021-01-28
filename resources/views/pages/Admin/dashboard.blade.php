@@ -14,6 +14,12 @@
                     @endif
 
                     {{ __('Hello ADMINISTRATOR, You are logged in!') }}
+
+                    <a href="/adminPanel">Eliminar usuarios</a>
+                    <a href="/editPanel">Editar usuarios</a>
+
+
+
                 </div>
             </div>
         </div>
