@@ -16,42 +16,47 @@ nav{
 }
 
 #section1 {
-	height: 360vh;
+	height: 420vh;
 }
 
 #divTexto1 {
-	height: 39vh;
+	height: 50vh;
 	padding: 1vw;
 	border: 1px solid black;
 	margin-top: 1vh;
+	box-shadow: 10px 5px 5px black;
 }
 
 #divTexto2 {
-	height: 36vh;
+	height: 45vh;
 	padding: 1vw;
 	border: 1px solid black;
 	margin-top: 1vh;
+	box-shadow: 10px 5px 5px black;
 }
 
 #divTexto3 {
-	height: 36vh;
+	height: 45vh;
 	padding: 1vw;
 	border: 1px solid black;
 	margin-top: 1vh;
+	box-shadow: 10px 5px 5px black;
 }
 
 #divTexto4 {
-	height: 36vh;
+	height: 45vh;
 	padding: 1vw;
 	border: 1px solid black;
 	margin-top: 1vh;
+	box-shadow: 10px 5px 5px black;
 }
 
 #divTexto5 {
-	height: 36vh;
+	height: 45vh;
 	padding: 1vw;
 	border: 1px solid black;
 	margin-top: 1vh;
+	box-shadow: 10px 5px 5px black;
 }
 
 footer{
@@ -216,4 +221,3 @@ footer{
 
 
 }
-

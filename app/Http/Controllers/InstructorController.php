@@ -46,7 +46,7 @@ class InstructorController extends Controller
      */
     public function show(Instructor $instructor)
     {
-        //
+        return view('/pages/instructorSchedule');
     }
 
     /**

@@ -2,11 +2,11 @@
 
 @section('content')
 
-<a href=”{route(admin.users.create”) }} “class =”btn btn-info”> Registrar nuevo usuario</a><hr>
+<a href=”{route(admin.users.editPanel”) }} “class =”btn btn-info”> Registrar nuevo usuario</a><hr>
 
 <thead>
 <th>Id </th>
-<th> Name</th>
+<th> User Name</th>
 <th> Email</th>
 <th> Action</th>
 </thead>
@@ -18,7 +18,7 @@
 	<tr>
      
 		<td> {{ $user -> id }} </td>
-		<td> {{ $user -> userName}} </td>
+		<td> {{ $user -> name}} </td>
 		<td> {{ $user -> email }} </td>
 		<td>
         

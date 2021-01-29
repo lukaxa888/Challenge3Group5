@@ -39,14 +39,14 @@
                                    {{$encontrado=false}} 
                                     @for($z = 0; $z < count($workoutConnections);$z++)
                                         @if($workoutConnections[$z]->schedule_id==$scheduleTime[$a]->id)                                      
-                                        <td value="{{$scheduleTime[$a]->id}}"  class="scheduleClass"> <a href="javascript:void(0);"> <span>{{$workoutConnections[$z]->workouts[0]->name}} </span></a> </td>
+                                        <td  value="{{$scheduleTime[$a]->id}}"  class="scheduleClass"> <a  href="javascript:void(0);"> <span>{{$workoutConnections[$z]->workouts[0]->name}} </span></a> </td>
                                         @php 
                                         $encontrado=true;
                                         @endphp     
                                         @endif
                                     @endfor
                                 @if($encontrado==false)
-                                <td value="{{$scheduleTime[$a]->id}}" class="scheduleClass" ></td>
+                                <td  value="{{$scheduleTime[$a]->id}}" class="scheduleClass" ></td>
                                 @endif
                                 @php  
                                    $a++
@@ -82,9 +82,10 @@
                </select>
                <input type="text"  hidden="true" name="valueTd" id="hiddenScheduleIdText">
                <input type="submit" value="Save" id="">
-               
+               <input type="text" name="selectedTD" id="selectedTD" placeholder="Selected Day">
 
             </form>
+            <input type="text" name="selectedTD" id="selectedTD" placeholder="Selected Day">
             <form method="post" id="formDelete" action="" >
             @csrf
             @method('DELETE')
@@ -98,6 +99,7 @@
 </div>
 <script>
     $(document).ready(function(){
+   
     $(".scheduleClass").on('click',function(){
         let attributeValue = $(this).attr("value");
       $("#hiddenScheduleIdText").attr("value",attributeValue);
@@ -108,6 +110,7 @@
     
 
 </script>
+
 
 
 <script>

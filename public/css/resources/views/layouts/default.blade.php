@@ -16,9 +16,15 @@
 <section>
     @yield('content')
 </section>
+@if (Auth::guest())
 <section class="mt-3">
 @include('includes.sectionSigIn')
 </section>
+      @else
+        User:
+            {{ Auth::user()->name }}
+            @endif
+
 <section id="socialMe">
 @include('includes.sectionSocial')
 </section>

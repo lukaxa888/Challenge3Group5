@@ -15,7 +15,7 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users'); 
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade'); 
             $table->timestamp('joinining_date');
             $table->date('end_of_membership_date');
         });

@@ -50,7 +50,36 @@ return [
     'rate3' => 'Rate 2',
     'rate4' => 'Rate 3',
     'adress' => 'Address *',
-    
+    'facilities1' => "We have plenty of equipment that you could be using as you want. In our gym there are some machines which make your workout easier by just allowing to make certain movements to work the part of the body specified.
+    There are some treadmills for the people who don't like running outside, some weights distributed in different ways and different machines to work some specific muscles, mats so that you don't need to touch the floor while doing some exercises in it as abs, ... ",
+    'facilities2' => "This is a area where we only placed static bikes, we have about 15 bikes for the customers and one for a teacher to give some classes.
+    This room is used only for classes, this means only classes will be taking place here, you can't go by your own and start using some bikes.
+    These classes are of spinning, and there are given by different teachers to allow you choose the one that you most like.",
+    'facilities3' => "Inside our facilities we have several paddle tennis courts, exactly 6, where you can play if you make a reservation.
+    We also host many tournaments where the best players of Europe come and play at a really high level, so for that we haves a terrace where people who are afiliated can watch and enjoy these games.",
+    'facilities4' => "Next to our paddle tennis courts we also have some tennis courts, the same ammount as paddle ones, 6. This courts work pretty much the same way as the paddle tennis ones, you need to book a court, there are some tournaments also and you can even get some guided classes.",
+    'facilities5' => "We have two types os swimming pools, we have one situated in the outside of the building and another one inside it.
+    As around the building there was a big green garde, we decided to create a really huge swimming pool that would allow you to have a bath and also stay at the grass with a towel.",
+    'basic' => 'Basic',
+    'money1' => '10€/month',
+    'access' => 'Access to all facilities',
+    'week1' => '1 class per week',
+    'energy' => "An energy drink after your weekly class",
+    'offers' => "Especial offers in our shop",
+    'trainer' => "Personal trainer",
+    'physio' => "Physiotherapist",
+    'money2' => "20€/month",
+    'week2' => "2 classes per week",
+    'money3' => "30€/month",
+    'week3' => "3 classes per week",
+    'bike2' => "Our bike area is the largest in the area",
+    'bike3' => "We have a lot of bikes for you",
+    'zumba2' => "Practice this wonderful dance with the best instructors",
+    'zumba3' => "We have plenty of space for everyone to dance!",
+    'crossfit2' => "The training that firefighters do",
+    'crossfit3' => "Train at high intensity to tone your body",
+    'aqua2' => "Have fun doing sport in the swimming pool",
+    'aqua3' => "Enjoy your results",
 
 
 

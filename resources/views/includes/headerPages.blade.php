@@ -14,7 +14,16 @@
         {{ trans('messages.faci') }}
         </a>
       </li>
-      
+      @can('isInstructor')
+      <a class="nav-link" href="{{route('instructor.schedule',Auth::user()->id)}}" id="navbarDropdownMenuLink" role="button">
+        Schedule 
+        </a>
+      @endcan
+      @can('isAdmin')
+      <a class="nav-link" href="/admin_dashboard" id="navbarDropdownMenuLink" role="button">
+        AdminDashboard 
+        </a>
+      @endcan
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {{ trans('messages.rates') }}

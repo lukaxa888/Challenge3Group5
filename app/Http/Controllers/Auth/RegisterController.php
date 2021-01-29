@@ -85,7 +85,6 @@ class RegisterController extends Controller
         'role' =>3,
 
     ]);
-
     return redirect()->route('users.landing');
     }
 }

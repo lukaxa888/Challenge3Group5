@@ -65,6 +65,9 @@ footer{
 	height: 20%;
 	margin-bottom: 2%;
 }
+.scheduleClass:hover{
+	background-color: lightgray;
+}
 
  /*
  Media queries para hacer el footer responsive ya que está hecho con css

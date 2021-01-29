@@ -19,7 +19,7 @@ class CreatePaymentsTable extends Migration
             $table->float('amount',4,2);
             $table->time('payment_time');
             $table->date('payment_date');
-            $table->foreignId('member_id')->references('id')->on('members');
+            $table->foreignId('member_id')->references('id')->on('members')->onDelete('cascade');
         });
     }
 

@@ -51,13 +51,12 @@ class UserSeeder extends Seeder
             'role'=>3,
         ]);
     }
-    
     DB::table('users')->insert([
         'name' => "Xabier",
         'first_surname' => "Iturrioz",
         'second_surname' => "Carrasco",
         'phone_number' => 615926688,
-        'email'=>"admin@gmail.com",
+        'email'=>"lukaxa888@gmail.com",
         'gender'=> "male",
         'age'=> 22,
         'address'=>"Azpeitia",

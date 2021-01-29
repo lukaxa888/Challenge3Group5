@@ -50,4 +50,34 @@ return [
     'rate3' => 'Tarifa 2',
     'rate4' => 'Tarifa 3',
     'adress' => 'Dirección *',
+    'facilities1' => "Tenemos una gran cantidad de equipos que puede utilizar como desee. En nuestro gimnasio existen algunas máquinas que facilitan tu entrenamiento simplemente permitiendo realizar ciertos movimientos para trabajar la parte del cuerpo especificada.
+    Hay unas cintas de correr para las personas que no les gusta correr al aire libre, unas pesas distribuidas de diferentes formas y distintas máquinas para trabajar unos músculos específicos, colchonetas para que no necesites tocar el suelo mientras haces algunos ejercicios en él como abdominales ...",
+    'facilities2' => "Esta es un área donde solo colocamos bicicletas estáticas, tenemos alrededor de 15 bicicletas para los clientes y una para un maestro para dar algunas clases.
+    Esta sala se usa solo para clases, esto significa que solo las clases se llevarán a cabo aquí, no puede ir por su cuenta y comenzar a usar algunas bicicletas.
+    Estas clases son de spinning, y las imparten diferentes profesores para que puedas elegir la que más te guste.",
+    'facilities3' => "Dentro de nuestras instalaciones disponemos de varias pistas de pádel, exactamente 6, donde podrás jugar si haces reserva.
+    También albergamos muchos torneos donde los mejores jugadores de Europa vienen y juegan a un nivel realmente alto, por eso tenemos una terraza donde los afiliados pueden ver y disfrutar de estos partidos.",
+    'facilities4' => "Junto a nuestras pistas de pádel también tenemos algunas pistas de tenis, la misma cantidad que las de pádel, 6. Estas pistas funcionan prácticamente de la misma manera que las de pádel, necesitas reservar una pista, también hay algunos torneos y tú Incluso puede recibir algunas clases guiadas.",
+    'facilities5' => "Disponemos de dos tipos de piscinas, una situada en el exterior del edificio y otra en el interior.
+    Como alrededor del edificio había un gran jardín verde, decidimos crear una piscina realmente enorme que te permitiera darte un baño y también quedarte en el césped con una toalla.",
+    'basic' => 'Basico',
+    'money1' => '10€/mes',
+    'access' => 'Acceso a todas las instalaciones',
+    'week1' => '1 clase por semana',
+    'energy' => "Una bebida energetica despues de tu clase semanal",
+    'offers' => "Ofertas especiales en nuestra tienda",
+    'trainer' => "Entrenador personal",
+    'physio' => "Fisioterapeuta",
+    'money2' => "20€/mes",
+    'week2' => "2 clases por semana",
+    'money3' => "30€/mes",
+    'week3' => "3 clases por semana",
+    'bike2' => "Nuestra zona de bicis es la mas grande de la zona",
+    'bike3' => "Tenemos muchas bicicletas para vosotros",
+    'zumba2' => "Practica este maravilloso deporte con los mejores monitores",
+    'zumba3' => "Tenemos espacio de sobra para poder bailar todos juntos!",
+    'crossfit2' => "El entrenamiento que practican los bomberos",
+    'crossfit3' => "Entre a una alta intesidad para tonificar tu cuerpo",
+    'aqua2' => "Diviertete haciendo deportes en el agua",
+    'aqua3' => "Disfruta de tus resultados",
 ];
