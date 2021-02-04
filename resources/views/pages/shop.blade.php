@@ -16,11 +16,19 @@
             @csrf
             <div class="item">
               <div class="pad15">
+<<<<<<< HEAD
                 <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                
                 <p class="parrafos"><b>CREATINE AMIX</b></p>
                 <li name='amount' id="first" class="listas" value='19.99'>19,99$</li>
                 <br>
+=======
+                <img class="lead" src="img/producto3.jpg"></img>
+                <p class="parrafos"><b>CREATINE AMIX</b></p>
+                <li name='amount' id="first" class="listas" value='19.99'>19,99$</li>
+                <br>
+                <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
               </div>
             </div>
 
@@ -28,11 +36,19 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
 
                   <p class="parrafos"><b>PLATINUM CREATINE</b></p>
                   <li name='amount' class="listas" value='24.99'>24,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto1.jpg"></img>
+                  <p class="parrafos"><b>PLATINUM CREATINE</b></p>
+                  <li name='amount' class="listas" value='24.99'>24,99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -41,10 +57,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead" src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>PROTEIN WHEY</b></p>
                   <li name='amount' class="listas" value='29.99'>29,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto2.jpg"></img>
+                  <p class="parrafos"><b>PROTEIN WHEY</b></p>
+                  <li name='amount' class="listas" value='29.99'>29,99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -52,10 +76,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>NITRO-TECH PROTEIN</b></p>
                   <li name='amount' class="listas" value='39.99'>39,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto4.jpg"></img>
+                  <p class="parrafos"><b>NITRO-TECH PROTEIN</b></p>
+                  <li name='amount' class="listas" value='39.99'>39.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -63,10 +95,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead" id="iso"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>ISO WHEY PROTEIN</b></p>
                   <li name='amount' class="listas" value='51.9'>51,90$</li>
                   <br>
+=======
+                  <img class="lead" id="iso" src="img/producto5.jpg"></img>
+                  <p class="parrafos"><b>ISO WHEY PROTEIN</b></p>
+                  <li name='amount' class="listas" value='51.9'>51.90$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -74,10 +114,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>ENERGY DRINK(x8)</b></p>
                   <li name='amount' class="listas" value='14.99'>14,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto6.jpg"></img>
+                  <p class="parrafos"><b>ENERGY DRINK(x8)</b></p>
+                  <li name='amount' class="listas" value='14.99'>14.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -85,10 +133,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>RED BULL(x8)</b></p>
                   <li name='amount' class="listas" value='17.99'>17,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto7.jpg"></img>
+                  <p class="parrafos"><b>RED BULL(x8)</b></p>
+                  <li name='amount' class="listas" value='17.99'>17.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -96,10 +152,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>POWERADE(x8)</b></p>
                   <li name='amount' class="listas" value='18.99'>18,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto8.jpg"></img>
+                  <p class="parrafos"><b>POWERADE(x8)</b></p>
+                  <li name='amount' class="listas" value='18.99'>18.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -107,10 +171,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>ISOSTAR</b></p>
                   <li name='amount'  class="listas" value='12.99'>12,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto9.jpg"></img>
+                  <p class="parrafos"><b>ISOSTAR</b></p>
+                  <li name='amount' value='12.99'>12.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -118,10 +190,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>ISOSTAR</b></p>
                   <li name='amount'   class="listas" value='13.99'>13,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto10.jpg"></img>
+                  <p class="parrafos"><b>ISOSTAR</b></p>
+                  <li name='amount' value='13.99'>13.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -129,10 +209,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>REFLEX</b></p>
                   <li name='amount' class="listas"  value='7.99'>7,99$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto11.jpg"></img>
+                  <p class="parrafos"><b>REFLEX</b></p>
+                  <li name='amount' value='7.99'>7.99$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
               </div>
             </form>
@@ -140,10 +228,18 @@
               @csrf
               <div class="item">
                 <div class="pad15">
+<<<<<<< HEAD
                   <img class="lead"  src="{{asset('img/producto1.jpg')}}"></img>
                   <p class="parrafos"><b>TIGER BALM</b></p>
                   <li name='amount' class="listas"  value='11.40'>11,40$</li>
                   <br>
+=======
+                  <img class="lead" src="img/producto12.jpg"></img>
+                  <p class="parrafos"><b>TIGER BALM</b></p>
+                  <li name='amount' value='11.40'>11.40$</li>
+                  <br>
+                  <input type='submit' id="boton1" value="Buy Now!" class="botones"></input>
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
                 </div>
             </form>
         </div>

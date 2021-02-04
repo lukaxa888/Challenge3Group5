@@ -40,11 +40,34 @@ Route::group(['middleware' => ['auth', 'web']], function() {
     Route::get('/calendar','CalendarController@showAdmin')->name('calendarAdmin');
     Route::post('/calendarUpdate','WorkoutConnectionController@update')->name('calendarUpdate');
     Route::post('/userUpdate','UserProfileController@update')->name('userUpdate');
+<<<<<<< HEAD
+
+=======
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
 
 
 
 
+    Route::delete('/calendarDelete/{id}','CalendarController@destroy')->name('calendarDelete');
+    Route::get('/instructorSchedule/{instructor}','InstructorController@show')->name('instructor.schedule');
+    Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+    Route::get('/admin_dashboard','Admin\DashboardController@index')->middleware('role:1');
+    
+    Route::get('/adminPanel','Admin\DashboardController@returnUsers')->name('dashboardAdmin')->middleware('role:1');
+    
+    Route::delete('users/{id}', 'UserController@deleteUser')
+            ->name('userDestroy')->middleware('role:1');
 
+<<<<<<< HEAD
+    //Panel editar
+
+    Route::get('/editPanel','Admin\DashboardController@returnUsersEdit')->name('editPanel')->middleware('role:1');
+
+    Route::get('/usersEdit/{id}', 'Admin\DashboardController@returnUserEdit')->name('userUpdateAdmin')->middleware('role:1');
+
+    Route::post('/usersEdit/{user}', 'UserController@registerEdit')->name('registerEdit')->middleware('role:1');
+
+=======
     Route::delete('/calendarDelete/{id}','CalendarController@destroy')->name('calendarDelete');
     Route::get('/instructorSchedule/{instructor}','InstructorController@show')->name('instructor.schedule');
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -62,7 +85,11 @@ Route::group(['middleware' => ['auth', 'web']], function() {
     Route::get('/usersEdit/{id}', 'Admin\DashboardController@returnUserEdit')->name('userUpdateAdmin')->middleware('role:1');
 
     Route::post('/usersEdit/{user}', 'UserController@registerEdit')->name('registerEdit')->middleware('role:1');
-
+    
+    
+    
+    
+>>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
     Route::get('/instructor_dashboard','Instructor\DashboardController@index')->middleware('role:2');
     Route::delete('/deleteUser','UserProfileController@destroy')->name('deleteUser');
     Route::get('/profile', function () {
