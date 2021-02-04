@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.defaultCalendar')
 @section('content')
 
 <style>
@@ -199,22 +199,12 @@
             </div>
         </div>
         <div class="col-lg-4 order-lg-1 text-center">
-<<<<<<< HEAD
             <img  src="{{asset('img/account.png')}}" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-=======
-            <img src="img/account.png" class="mx-auto img-fluid img-circle d-block" alt="avatar">
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
-            <h6 class="mt-2">Upload a different photo</h6>
-            <label class="custom-file">
-                <input type="file" id="file" class="custom-file-input">
-                <span class="custom-file-control">Choose file</span>
-            </label>
         </div>
     </div>
 </div>
 <script>
-    /* $(function() { */
-
+   
     $("#name_error_message").hide();
     $("#surname_error_message").hide();
     $("#surname2_error_message").hide();
