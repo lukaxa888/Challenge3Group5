@@ -39,14 +39,14 @@
                                    {{$encontrado=false}} 
                                     @for($z = 0; $z < count($workoutConnections);$z++)
                                         @if($workoutConnections[$z]->schedule_id==$scheduleTime[$a]->id)                                      
-                                        <td value="{{$scheduleTime[$a]->id}}"  class="scheduleClass"> <a href="javascript:void(0);"> <span>{{$workoutConnections[$z]->workouts[0]->name}} </span></a> </td>
+                                        <td  value="{{$scheduleTime[$a]->id}}"  class="scheduleClass"> <a href="javascript:void(0);"> <span>{{$workoutConnections[$z]->workouts[0]->name}} </span></a> </td>
                                         @php 
                                         $encontrado=true;
                                         @endphp     
                                         @endif
                                     @endfor
                                 @if($encontrado==false)
-                                <td value="{{$scheduleTime[$a]->id}}" class="scheduleClass" ></td>
+                                <td  value="{{$scheduleTime[$a]->id}}" class="scheduleClass" ></td>
                                 @endif
                                 @php  
                                    $a++
@@ -56,8 +56,6 @@
                      </tr>
 
                     @endfor
-
-
                 </tbody>
             </table>
         </div>
@@ -71,6 +69,9 @@
                 @endforeach
            </div>
            <div clss="row pt-2" id="divSelect">
+           @can('isAdmin')
+      
+      
            <form method="POST" action="{{ route('calendarUpdate') }}">
            @csrf
                <select name="workoutSelect">
@@ -92,22 +93,23 @@
             <input type="submit" value="Delete">
             </form>
            </div>
-         
+           @endcan
     </div>  
     </div>
 </div>
 <script>
     $(document).ready(function(){
     $(".scheduleClass").on('click',function(){
+       $(this).css("background-color","lightgray");
         let attributeValue = $(this).attr("value");
       $("#hiddenScheduleIdText").attr("value",attributeValue);
      let newId = "/calendarDelete/"+attributeValue;
    $("#formDelete").attr("action",newId);
-    });
 });
-    
+});
 
 </script>
+
 
 
 <script>

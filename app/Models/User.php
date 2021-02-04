@@ -18,6 +18,10 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Member::class);
     }
+    public function workout_connections()
+    {
+        return $this->belongsToMany(Workout::class,'workout_plans','workout_connection_id','user_id');
+    }
     /**
      * The attributes that are mass assignable.
      *

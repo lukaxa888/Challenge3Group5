@@ -12,8 +12,9 @@ class Instructor extends Model
     {
         return $this->hasOne(User::class);
     }
+
     public function workout()
     {
-        return $this->belongsTo(Workout::class);
+        return $this->belongsTo(Workout::class,'id','instructor_id');
     }
 }

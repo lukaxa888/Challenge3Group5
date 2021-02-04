@@ -4,7 +4,7 @@
     @include('includes.head')
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between"> 
+<nav class="navbar navbar-expand-lg  navbar-light bg-white justify-content-between"> 
     @include('includes.headerUser')
 </nav>
 <nav id="navNoticias" class="bg-primary">
@@ -16,9 +16,13 @@
 <section>
     @yield('content')
 </section>
+
+@if (Auth::guest())
 <section class="mt-3">
 @include('includes.sectionSigIn')
 </section>
+@endif
+
 <section id="socialMe">
 @include('includes.sectionSocial')
 </section>
@@ -26,4 +30,7 @@
 @include('includes.footer')
 </footer>
 </body>
+<script>
+$(document).off('focusin.modal');
+</script>
 </html>

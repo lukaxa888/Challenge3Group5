@@ -16,5 +16,6 @@ class AdminSeeder extends Seeder
     public function run()
     {
         DB::table('users')->where('id', 6)->update(['role' => 1]);
+        
     }
 }

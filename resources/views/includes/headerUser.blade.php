@@ -1,36 +1,38 @@
 <!--    
   ESTO ES LO QUE TIENE QUE TENER EL NAV DEL INCLUDE
   <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between"> 
--->
-<img class="navbar-brand" id="imagenLogo" src="img/logo.png" width="100" height="100">
+-->       
+<img class="navbar-brand" id="imagenLogo" src="{{asset('img/logo.png')}}" width="100" height="100">
 
 
 <ul class="navbar-nav ">
 
   <li class="nav-item pr-4">
- 
+
     <a class="text-dark" data-toggle="modal" data-target="#exampleModal" alt="" loading="lazy">
-      <img src="img/account.png" width="30" height="30" class="d-inline-block align-top " data-toggle="modal" data-target="#exampleModal" alt="" loading="lazy">
+      <img src="{{asset('img/account.png')}}" width="30" height="30" class="d-inline-block align-top " data-toggle="modal" data-target="#exampleModal" alt="" loading="lazy">
       @if (Auth::guest())
       {{ trans('messages.manage') }}
       @else
-
-            {{ Auth::user()->name }}
-            @endif
+      {{ Auth::user()->name }}
+      @endif
     </a>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            @if (Auth::guest())
+          @if (Auth::guest())
             <h5 class="modal-title" id="exampleModalLabel">{{ trans('messages.log') }}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
+            
           </div>
+      
           <div class="modal-body">
-
+          
             <form class="px-4 py-3" method="POST" action="{{ route('login') }}">
+         
               @csrf
               <div class="form-group">
                 <label for="exampleDropdownFormEmail1">{{ trans('messages.email2') }}</label>
@@ -44,12 +46,11 @@
               <div class="form-group">
                 <label for="exampleDropdownFormPassword1">{{ trans('messages.password1') }}</label>
                 <input type="password" class="form-control @error('password') is-invalid @enderror" id="exampleDropdownFormPassword1" required name="password" placeholder="{{ trans('messages.password1') }}">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                @error('password')
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </span>
+                @enderror
               </div>
               <div class="form-group">
                 <div class="form-check">
@@ -67,6 +68,7 @@
             @else
 
             {{ Auth::user()->name }}
+            <a class="btn btn-primary btn-flat" href="{{ route('users.profile') }}">Profile</a>
             <a href="{{ route('logout') }}">Logout</a>
             @endif
 
@@ -79,7 +81,8 @@
   </li>
   <li class="nav-item pr-4">
     <a href="#" class="text-dark">
-      <img src="img/carrito.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    
+      <img src="{{asset('img/carrito.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       {{ trans('messages.cart') }}
     </a>
 

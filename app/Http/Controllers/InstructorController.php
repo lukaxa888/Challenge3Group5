@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Instructor;
 use Illuminate\Http\Request;
+use App\Models\Workout;
+use App\Models\WorkoutConnection;
 
 class InstructorController extends Controller
 {
@@ -46,7 +48,10 @@ class InstructorController extends Controller
      */
     public function show(Instructor $instructor)
     {
-        //
+        $workout = $instructor->workout;
+        $schedules = $workout->schedules()->get();
+        //$workoutConnections = WorkoutConnection::->workouts()->where('id')
+        return view('/pages/instructorSchedule')->with('workout',$workout)->with('schedules', $schedules);
     }
 
     /**

@@ -15,6 +15,8 @@ class CreateWorkoutPlansTable extends Migration
     {
         Schema::create('workout_plans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('workout_connection_id')->references('id')->on('workout_connections');
             $table->timestamps();
         });
     }

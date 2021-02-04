@@ -10,12 +10,6 @@ class WorkoutPlan extends Model
     use HasFactory;
 
 
-    public function members()
-    {
-        return $this->hasMany(Member::class);
-    }
-    public function workoutconnections()
-    {
-        return $this->hasMany(WorkoutConnection::class);
-    }
+  
+   
 }

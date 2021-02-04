@@ -15,8 +15,8 @@ class CreateWorkoutConnectionsTable extends Migration
     {
         Schema::create('workout_connections', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('workout_id')->references('id')->on('workouts'); 
-            $table->foreignId('schedule_id')->references('id')->on('schedules'); 
+            $table->foreignId('workout_id')->references('id')->on('workouts')->onDelete('cascade'); 
+            $table->foreignId('schedule_id')->references('id')->on('schedules')->onDelete('cascade'); 
             $table->timestamps();
         });
         $Workout_ConnectionSeeder = new Workout_ConnectionSeeder;

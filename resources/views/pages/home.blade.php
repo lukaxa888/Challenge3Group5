@@ -21,7 +21,7 @@
   <!-- Nav con logo y opciones de administración -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
   <img  class="navbar-brand" id="imagenLogo" src="img/logo.png" width="100" height="100">
-  
+ 
 
     <ul class="navbar-nav ">
       

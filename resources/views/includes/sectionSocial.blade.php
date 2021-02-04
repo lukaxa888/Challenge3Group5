@@ -3,7 +3,8 @@
     SECTION DONDE SE METE LA PARTE DE SOCIAL E IMAGENES DE PAGO
     <section id="socialMe">
 -->
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
   <div id="footerBox1">
   <h1>{{ trans('messages.subscribe') }}</h1>
@@ -14,14 +15,49 @@
   <input type="submit" name="send" value="{{ trans('messages.send') }}">
   </div>
   <div id="footerBox2">
-    <img class="socialLinkImages" src="img/instagram.jpg">
-    <img class="socialLinkImages" src="img/twitter.png">
-    <img class="socialLinkImages" src="img/facebook.png">
+    <img class="socialLinkImages" src="{{asset('img/instagram.jpg')}}">
+    <img class="socialLinkImages" src="{{asset('img/twitter.png')}}">
+    <img class="socialLinkImages" src="{{asset('img/facebook.png')}}">
     
   </div>
   <div id="footerBox3">
-    <img src="img/payment.jpg">
+
+    <img   src="{{asset('img/payment.jpg')}}">
   </div>
-  <div id="footerBox4">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.5847447575666!2d-1.9908732845135921!3d43.30201717913491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b01d51947163%3A0x8916ad3db217f11e!2sEtxadi%20kiroldegia!5e0!3m2!1ses!2ses!4v1606982351093!5m2!1ses!2ses" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <div id="mapid" style="width: 200px; height: 200px;">
   </div>
+  <script>
+
+var mymap = L.map('mapid').setView([43.3020211,-1.9908733], 12);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1
+}).addTo(mymap);
+
+L.marker([43.3020211,-1.9908733]).addTo(mymap) 
+    .bindPopup("<b>Here is our sports center!</b>").openPopup();
+
+L.circle([ 43.3088200,-2.0364300], 500, { 
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(mymap).bindPopup("Best area for walks ");
+
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick);
+
+</script>

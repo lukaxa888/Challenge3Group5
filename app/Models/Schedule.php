@@ -12,8 +12,8 @@ class Schedule extends Model
         'date',
         'hour',
     ];
-    public function workoutconnection()
+    public function workouts()
     {
-        return $this->belongsTo(WorkoutConnection::class,'schedule_id','id');
+        return $this->belongsToMany(Workout::class,'workout_connections','schedule_id','workout_id');
     }
 }

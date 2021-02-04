@@ -14,14 +14,14 @@ class WorkoutConnection extends Model
   
     public function workouts()
     {
-
         return $this->hasMany(Workout::class,'id','workout_id');
     }
     public function schedules()
     {
         return $this->hasMany(Schedule::class,'id','schedule_id');
     }
-    public function workoutplan(){
-        return $this->belongsTo(WorkoutPlan::class);
+    public function users()
+    {
+        return $this->belongsToMany(User::class,'workout_plans','workout_connection_id','user_id');
     }
 }

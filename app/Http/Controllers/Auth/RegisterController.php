@@ -70,21 +70,21 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'first_surname' =>$data['first_surname'],
-            'second_surname' =>$data['second_surname'],
-            'phone_number' =>$data['phone_number'],
-            'gender' =>$data['gender'],
-            'age' =>$data['age'],
-            'address' =>$data['address'],
-            'username' =>$data['username'],
-            'role' =>$data['role'],
-        ]);
-       
+    protected function register()
+    {   User::create([
+        'name' => request('name'),
+        'email' => request('email'),
+        'password' => Hash::make(request('password')),
+        'first_surname' => request('first_surname'),
+        'second_surname' => request('second_surname'),
+        'phone_number' => request('phone_number'),
+        'gender' =>request('gender'),
+        'age' =>request('age'),
+        'address' =>request('address'),
+        'username' =>request('username'),
+        'role' =>3,
+
+    ]);
+    return redirect()->route('users.landing');
     }
 }

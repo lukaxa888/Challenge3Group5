@@ -16,7 +16,7 @@ class CreateWorkoutsTable extends Migration
         Schema::create('workouts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('instructor_id')->references('id')->on('instructors');
+            $table->foreignId('instructor_id')->references('id')->on('instructors')->onDelete('cascade');
             $table->string('description');
             $table->timestamps();
 

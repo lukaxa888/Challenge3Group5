@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use app\Models\Instructor;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Instructor\instructor_dashboard;
 /*
@@ -35,35 +36,45 @@ Route::get('/prices', function () {
 
 
 Route::group(['middleware' => ['auth', 'web']], function() {
+    
     Route::get('/calendar','CalendarController@showAdmin')->name('calendarAdmin');
     Route::post('/calendarUpdate','WorkoutConnectionController@update')->name('calendarUpdate');
-    
-    Route::delete('/calendarDelete/{id}','CalendarController@destroy')->name('calendarDelete');
+    Route::post('/userUpdate','UserProfileController@update')->name('userUpdate');
 
+
+
+
+
+    Route::delete('/calendarDelete/{id}','CalendarController@destroy')->name('calendarDelete');
+    Route::get('/instructorSchedule/{instructor}','InstructorController@show')->name('instructor.schedule');
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
     Route::get('/admin_dashboard','Admin\DashboardController@index')->middleware('role:1');
-    Route::get('/instructor_dashboard','Instructor\DashboardController@index')->middleware('role:2');
+    
+    Route::get('/adminPanel','Admin\DashboardController@returnUsers')->name('dashboardAdmin')->middleware('role:1');
+    
+    Route::delete('users/{id}', 'UserController@deleteUser')
+            ->name('userDestroy')->middleware('role:1');
 
+    //Panel editar
+
+    Route::get('/editPanel','Admin\DashboardController@returnUsersEdit')->name('editPanel')->middleware('role:1');
+
+    Route::get('/usersEdit/{id}', 'Admin\DashboardController@returnUserEdit')->name('userUpdateAdmin')->middleware('role:1');
+
+    Route::post('/usersEdit/{user}', 'UserController@registerEdit')->name('registerEdit')->middleware('role:1');
+
+    Route::get('/instructor_dashboard','Instructor\DashboardController@index')->middleware('role:2');
+    Route::delete('/deleteUser','UserProfileController@destroy')->name('deleteUser');
+    Route::get('/profile', function () {
+        return view('pages/userProfile');
+    })->name('users.profile');
+    Route::get('/register', function () {
+        return view('register');
+    })->name('users.register');
     Route::get('/shop', function () {
         return view('pages/shop');
     })->name('users.shop');
-
-    
-
-  
-
-  
-
     Route::post('/store', [shopController::class, 'store'])->name('users.store.shop');
-
-
-
-
-
-
-
-
-
 });
 Route::get('lang/{lang}', function ($lang) {
     session(['lang' => $lang]);
