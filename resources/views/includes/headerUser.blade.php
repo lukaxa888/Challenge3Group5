@@ -2,13 +2,12 @@
   ESTO ES LO QUE TIENE QUE TENER EL NAV DEL INCLUDE
   <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between"> 
 -->       
+<a href="/">
 <img class="navbar-brand" id="imagenLogo" src="{{asset('img/logo.png')}}" width="100" height="100">
-
+</a>
 
 <ul class="navbar-nav ">
-
   <li class="nav-item pr-4">
-
     <a class="text-dark" data-toggle="modal" data-target="#exampleModal" alt="" loading="lazy">
       <img src="{{asset('img/account.png')}}" width="30" height="30" class="d-inline-block align-top " data-toggle="modal" data-target="#exampleModal" alt="" loading="lazy">
       @if (Auth::guest())
@@ -64,7 +63,7 @@
             </form>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/register">{{ trans('messages.new1') }}</a>
-            <a class="dropdown-item" href="#">{{ trans('messages.forgot') }}</a>
+            <a class="dropdown-item" href="">{{ trans('messages.forgot') }}</a>
             @else
 
             {{ Auth::user()->name }}
@@ -77,10 +76,9 @@
 
       </div>
     </div>
-
   </li>
   <li class="nav-item pr-4">
-    <a href="#" class="text-dark">
+    <a href="/shop" class="text-dark">
     
       <img src="{{asset('img/carrito.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       {{ trans('messages.cart') }}

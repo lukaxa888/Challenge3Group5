@@ -1,9 +1,6 @@
 @extends('layouts.default')
 @section('content')
-<<<<<<< HEAD
 
-=======
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
 <style type="text/css">
 
   #section10 {
@@ -15,10 +12,7 @@
 
   .divsTexto {
     box-shadow: 5px 5px 5px black;
-<<<<<<< HEAD
     border: 2px solid black;
-=======
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
   }
 
 </style>
@@ -117,7 +111,6 @@
 
 
 </div>
-<<<<<<< HEAD
 <div class="row container-fluid justify-content-center mt-5 mb-5 align-items-center">
 
 
@@ -126,7 +119,3 @@
 </section>
 @endsection
 
-=======
-</section>
-@endsection
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642

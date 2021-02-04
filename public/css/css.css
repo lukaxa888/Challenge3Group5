@@ -18,13 +18,11 @@ nav{
 	height: 30vw;
 }
 footer{
-	
 	background-color: black;
 	width: 100%;
 	height: 10%;
 	color: white;
 	text-align: center;
-	
 	clear: both;
 }
 
@@ -53,7 +51,6 @@ footer{
 	float: left;
 	margin-top: 3%;
 }
-
 #margenMedio{
 	padding-left:35%; 
 }

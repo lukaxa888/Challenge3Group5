@@ -14,8 +14,8 @@
     @yield('content')
 </section>
 
+</body>
 <footer>
 @include('includes.footer')
 </footer>
-</body>
 </html>

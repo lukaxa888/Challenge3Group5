@@ -48,14 +48,10 @@ class InstructorController extends Controller
      */
     public function show(Instructor $instructor)
     {
-<<<<<<< HEAD
         $workout = $instructor->workout;
         $schedules = $workout->schedules()->get();
         //$workoutConnections = WorkoutConnection::->workouts()->where('id')
         return view('/pages/instructorSchedule')->with('workout',$workout)->with('schedules', $schedules);
-=======
-        return view('/pages/instructorSchedule');
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
     }
 
     /**

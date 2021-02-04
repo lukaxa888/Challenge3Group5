@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.defaultCalendar')
 
 @section('content')
 

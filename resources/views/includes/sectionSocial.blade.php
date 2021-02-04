@@ -18,7 +18,6 @@
     <img class="socialLinkImages" src="{{asset('img/instagram.jpg')}}">
     <img class="socialLinkImages" src="{{asset('img/twitter.png')}}">
     <img class="socialLinkImages" src="{{asset('img/facebook.png')}}">
-    
   </div>
   <div id="footerBox3">
 

@@ -1,7 +1,6 @@
 @extends('layouts.default')
 
 @section('content')
-<<<<<<< HEAD
 <div id="tablaDiv" >
 <table class="table">
   <thead>
@@ -35,7 +34,4 @@
 </div>
 
 
-=======
-eee
->>>>>>> 97195bb5ff58e01d058d22f7997aeded42061642
 @endsection

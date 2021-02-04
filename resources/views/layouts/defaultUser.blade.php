@@ -25,7 +25,7 @@
 <section id="socialMe">
 @include('includes.sectionSocial')
 </section>
-<footer>
+<footer class="fixed-bottom">
 @include('includes.footer')
 </footer>
 </body>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 class UserProfileController extends Controller
 {
     /**
@@ -79,7 +79,7 @@ class UserProfileController extends Controller
 
         $updateUser->role = $updateUser->role;
         if($request->password!=null){
-            $updateUser->password = $request->password;
+            $updateUser->password = Hash::make($request->password);
         }else{
             $updateUser->password =  $updateUser->password;
         }

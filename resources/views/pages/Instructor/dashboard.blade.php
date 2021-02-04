@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.defaultCalendar')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
